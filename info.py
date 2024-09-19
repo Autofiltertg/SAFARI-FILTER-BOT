@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://telegra.ph/file/2217e1bd03dc0f8146d75.jpg')
 # Admins, Channels & Users
 OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "chillxnow") # widout 👉 @
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7052947046').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001698487847 -1002440473319').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002310490325').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '7052947046').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('https://t.me/Mg_networks')
@@ -39,7 +39,7 @@ auth_grp = environ.get('https://t.me/+kTcmHE5y-OczYTZl')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('-1002261656013')
-reqst_channel = environ.get('-1002357077192')
+reqst_channel = environ.get('-1002289005501')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
@@ -53,38 +53,38 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 FILES_DELETE = is_enabled((environ.get('FILES_DELETE', 'True')), False)
 
 # fill premium users id
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '7015329594').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '7052947046').split()]
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'onepagelink.cpm'))
 STREAM_API = (environ.get('STREAM_API', '111cfc8fb2402f0b2ce471435ec60985da55bdce'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/mg_networks'))
-STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "True")), False)
+STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "True")), True)
 # Others
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'Trur')), True)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/c/1845700490/3")
-VERIFY2_URL = environ.get('VERIFY2_URL', "ziplinker.net")
-VERIFY2_API = environ.get('VERIFY2_API', "e45148e36c775f7602b27f6036bcd96a750db1c8")
+VERIFY2_URL = environ.get('VERIFY2_URL', "publicearn.com")
+VERIFY2_API = environ.get('VERIFY2_API', "c4527d03c7519c169a0c878aca3c0d048e070de2")
 
 # file Shortner urls
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e45148e36c775f7602b27f6036bcd96a750db1c8')
-IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'c4527d03c7519c169a0c878aca3c0d048e070de2')
+IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'True')), True)
 
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/shortnf')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+DXazAzf7vM0xN2Fl')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002438434161').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/lusigroup')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/lusifilms')
+GRP_LNK = environ.get('GRP_LNK', '+kTcmHE5y-OczYTZl')
+CHNL_LNK = environ.get('CHNL_LNK', 'Mg_Networks')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001998895377))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Apnamovie4')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '1002366418239'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+dZkkjEbgGv8wM2Nl')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 PM_FILTER = is_enabled((environ.get('PM_FILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
@@ -96,13 +96,13 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002411068018')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Streaming
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001998895377")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002312337801")
 if len(BIN_CHANNEL) == 0:
     logging.error('BIN_CHANNEL is missing, exiting now')
     exit()
